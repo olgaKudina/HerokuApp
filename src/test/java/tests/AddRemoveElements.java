@@ -20,15 +20,8 @@ public class AddRemoveElements {
         WebElement addButton = driver.findElement(By.xpath("//*[@id=\"content\"]/div/button"));
         addButton.click();
         addButton.click();
-
         driver.findElement(By.xpath("//*[@id=\"elements\"]/button[2]")).click();
-        boolean isDeleteButtonDisplayed = driver.findElement(By.xpath("//*[@id=\"elements\"]/button"));
-        Assert.assertTrue(isDeleteButtonDisplayed);
-
-
-
-
-
-
+        boolean isDeleteButtonIsDisplayed = driver.findElement(By.xpath("//*[@id=\"elements\"]/button")).isDisplayed();
+        Assert.assertTrue(isDeleteButtonIsDisplayed);
     }
 }

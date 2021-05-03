@@ -18,10 +18,9 @@ public class DropdownTest {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get("http://the-internet.herokuapp.com/dropdown");
-
         Select select = new Select(driver.findElement(By.id("dropdown")));
         select.selectByVisibleText("Option 1");
-        String  text = select.getFirstSelectedOption().getText();
+        String text = select.getFirstSelectedOption().getText();
         Assert.assertEquals(text, "Option 1");
     }
 }

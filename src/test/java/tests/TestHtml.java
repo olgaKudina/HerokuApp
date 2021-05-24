@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
-public class Test_html {
+public class TestHtml {
     @Test
     public void test_html() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
